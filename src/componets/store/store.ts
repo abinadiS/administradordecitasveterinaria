@@ -22,7 +22,7 @@ const createPatient = (patient: DraftPatient): Patient => {
 
 
 export const usePatienStore = create<PatientState>()(devtools(
-    persist((set, get) => ({
+    persist((set) => ({
         patients: [],
         activeId: '',
 
